@@ -7,11 +7,7 @@ from aiogram.filters import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiohttp import web
 
-# Tokenni faqat Environment'dan xavfsiz olamiz
-TOKEN = os.environ.get("BOT_TOKEN")
-
-if not TOKEN:
-    raise ValueError("XATOLIK: BOT_TOKEN muhit o'zgaruvchisi o'rnatilmagan!")
+TOKEN = os.environ.get("BOT_TOKEN", "8942305031:AAFA5Lzj2OS0YK_pL9abACkHveNj7gDhxWo")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -30,6 +26,7 @@ except FileNotFoundError:
     ALL_QUESTIONS = [{"question": f"Test savoli {i}", "options": ["Variant A", "Variant B"], "correct": "Variant A"} for i in range(1, 13)]
     print("questions.json topilmadi, vaqtincha test ma'lumotlari yaratildi.")
 
+# Har bir blokda nechta savol bo'lishi
 BLOCK_SIZE = 50 
 
 def get_blocks_keyboard(chat_id):
@@ -255,7 +252,7 @@ async def finish_quiz(chat_id, auto_paused=False):
     game = games[chat_id]
     results = game["results"]
     
-    if game.get("task"):
+    if game["task"]:
         game["task"].cancel()
         
     try:
@@ -275,13 +272,9 @@ async def finish_quiz(chat_id, auto_paused=False):
             
     await bot.send_message(chat_id, report, parse_mode="Markdown")
     
-    # [TUZATISH] KeyError xatoligini oldini olish
-    current_poll_id = game.get("current_poll_id")
-    if current_poll_id and current_poll_id in poll_to_chat:
-        del poll_to_chat[current_poll_id]
-        
-    if chat_id in games:
-        del games[chat_id]
+    if game["current_poll_id"] in poll_to_chat:
+        del poll_to_chat[game["current_poll_id"]]
+    del games[chat_id]
 
 # --- RENDER UCHUN VEB-SERVER QISMI ---
 async def web_handle(request):
@@ -293,15 +286,17 @@ async def start_web_server():
     runner = web.AppRunner(app)
     await runner.setup()
     
+    # [TUZATISH] Render muhitidagi asosiy portni olish (agar bo'lmasa 10000)
     port = int(os.environ.get("PORT", 10000))
+    
+    # Barcha IP lardan kelayotgan so'rovlarni eshitish uchun 0.0.0.0 qo'yamiz
     site = web.TCPSite(runner, '0.0.0.0', port)
     await site.start()
     print(f"Veb server {port}-portda muvaffaqiyatli ishga tushdi.")
 
 async def main():
-    # Veb serverni birinchi ishga tushiramiz (Render zudlik bilan portni tekshiradi)
-    await start_web_server()
     await bot.delete_webhook(drop_pending_updates=True)
+    await start_web_server()
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
