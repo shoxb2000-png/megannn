@@ -298,9 +298,7 @@
       "(x-4)/3 = (y+2)/0 = (z-5)/(-1)"
     ],
     "correct": "(x-4)/3 = (y+2)/0 = (z-5)/(-1)"
-  }
-]
-[
+  },
   {
     "question": "31. M0(2; -1) nuqtadan o'tib, n(3; 4) vektoriga perpendikulyar to'g'ri chiziq tenglamasini ko'rsating:",
     "options": [
@@ -600,9 +598,7 @@
       "8"
     ],
     "correct": "4"
-  }
-]
-[
+  },
   {
     "question": "61. A(1, 2, 3), B(4, 5, 6), C(7, 8, 9) nuqtalari uchun ABC uchburchak yuzini hisoblashda qaysi usul qo'llaniladi?",
     "options": [
@@ -902,9 +898,7 @@
       "0"
     ],
     "correct": "1"
-  }
-]
-[
+  },
   {
     "question": "91. 2x - y + 3z - 6 = 0 tekislikning koordinata o'qlari bilan kesishish nuqtalarini toping:",
     "options": [
@@ -1204,9 +1198,7 @@
       "Satrlarni ustunlarga bo'lish orqali"
     ],
     "correct": "Bosh diagonal elementlari ko'paytmasidan yordamchi diagonal elementlari ko'paytmasini ayirish orqali"
-  }
-]
-[
+  },
   {
     "question": "121. n-tartibli determinant uchun Leybnis (yoki noldan farqli hadlar soni) formulasiga ko'ra, uning yoyilmasida jami nechta had qatnashadi?",
     "options": [
@@ -1506,9 +1498,7 @@
       "Faqat bir jinsli holatdagina mavjud"
     ],
     "correct": "Mavjud va u yagonadir"
-  }
-]
-[
+  },
   {
     "question": "151. n ta noma'lumli n ta chiziqli tenglamalar sistemasi uchun barcha yordamchi determinantlar (Delta_xi) nolga teng bo'lsa, lekin asosiy determinant (Delta) noldan farqli bo'lsa, sistema qanday yechimga ega?",
     "options": [
@@ -1808,9 +1798,7 @@
       "(n-r)! / n!"
     ],
     "correct": "n! / (n-r)!"
-  }
-]
-[
+  },
   {
     "question": "181. Ikki tekislikning perpendikulyarlik sharti qanday ifodalanadi?",
     "options": [
@@ -2110,9 +2098,7 @@
       "ildiz(29)"
     ],
     "correct": "2"
-  }
-]
-[
+  },
   {
     "question": "211. Fazoda parallel ikki tekislik Ax + By + Cz + D1 = 0 va Ax + By + Cz + D2 = 0 orasidagi masofa qanday aniqlanadi?",
     "options": [
@@ -2412,9 +2398,7 @@
       "Uchta yo'naltiruvchi kosinuslar orqali"
     ],
     "correct": "Qutb radiusi rho va qutb burchagi phi orqali (rho; phi)"
-  }
-]
-[
+  },
   {
     "question": "241. To'g'ri chiziqning yo'naltiruvchi vektori s(2; -1; 3) bo'lsa, unga parallel bo'lgan boshqa to'g'ri chiziqning yo'naltiruvchi vektori qanday bo'lishi mumkin?",
     "options": [
@@ -2714,9 +2698,7 @@
       "{10; 4; -8}"
     ],
     "correct": "{14; 4; -8}"
-  }
-]
-[
+  },
   {
     "question": "271. To'g'ri chiziqning burchak koeffitsiyenti k = -2 bo'lib, M(1; 3) nuqtadan o'tsa, uning tenglamasi qanday bo'ladi?",
     "options": [
@@ -3016,9 +2998,7 @@
       "k = 2/3, b = -2"
     ],
     "correct": "k = 2/3, b = 2"
-  }
-]
-[
+  },
   {
     "question": "301. Aylana markazi (-2; 3) nuqtada joylashgan va radiusi R = 4 bo'lsa, uning kanonik tenglamasini ko'rsating:",
     "options": [
@@ -3318,9 +3298,7 @@
       "(2; 3)"
     ],
     "correct": "(3; 2)"
-  }
-]
-[
+  },
   {
     "question": "331. Uchlari A(1; -3) va B(7; 5) nuqtalarda bo'lgan AB kesmaning o'rtasi koordinatalarini toping:",
     "options": [
@@ -3620,8 +3598,7 @@
       "x = -10"
     ],
     "correct": "x = -5"
-  }
-][
+  },
   {
     "question": "361. Fazoda ikki tekislikning perpendikulyarlik sharti ularning normal vektorlari A1x + B1y + C1z + D1 = 0 va A2x + B2y + C2z + D2 = 0 orqali qanday aniqlanadi?",
     "options": [
@@ -3921,9 +3898,7 @@
       "To'g'ri chiziq tekislik ichida yotadi"
     ],
     "correct": "Kesishadi, lekin perpendikulyar emas"
-  }
-]
-[
+  },
   {
     "question": "361. Fazoda ikki tekislikning perpendikulyarlik sharti ularning normal vektorlari A1x + B1y + C1z + D1 = 0 va A2x + B2y + C2z + D2 = 0 orqali qanday aniqlanadi?",
     "options": [
@@ -4223,9 +4198,7 @@
       "To'g'ri chiziq tekislik ichida yotadi"
     ],
     "correct": "Kesishadi, lekin perpendikulyar emas"
-  }
-]
-[
+  },
   {
     "question": "391. Parallelogrammning uchta ketma-ket uchlari A(3;-5), B(5;-3), C(-1;3) berilgan. D uchining koordinatalarini toping:",
     "options": [
@@ -4525,9 +4498,7 @@
       "y = 0"
     ],
     "correct": "By + D = 0"
-  }
-]
-[
+  },
   {
     "question": "421. Oz o'qiga perpendikulyar bo'lgan tekislik tenglamasi qanday ko'rinishda bo'ladi?",
     "options": [
@@ -4827,9 +4798,7 @@
       "R = 3"
     ],
     "correct": "R = ildiz(16 + 9 - 9) = 4"
-  }
-]
-[
+  },
   {
     "question": "451. y = 2x - 3 to'g'ri chiziq berilgan. Unga perpendikulyar bo'lgan va koordinata boshidan o'tadigan to'g'ri chiziq tenglamasini toping:",
     "options": [
@@ -5129,9 +5098,7 @@
       "ildiz(14)"
     ],
     "correct": "2"
-  }
-]
-[
+  },
   {
     "question": "481. M(2; 3; -1) nuqtadan Oxz koordinata tekisligigacha bo'lgan masofani toping:",
     "options": [
